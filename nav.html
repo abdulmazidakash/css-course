@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        #main-menu{
+            background-color: #575fcf;
+        }
+        #main-menu ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+
+        }
+        #main-menu li{
+            display: inline-block;
+            position: relative;
+        }
+        #main-menu li a{
+            display: block;
+            padding: 12px 15px ;
+            color: wheat;
+            text-decoration: none;
+        }
+        #main-menu li a:hover{
+            background-color: #ff5e57;
+        }
+
+        /* #dropdown menu style */
+        #main-menu ul ul {
+            position: absolute;
+            left: 0;
+            top: 48;
+            background-color: #575fcf;
+            width: 200px;
+            display: none;
+            z-index: 999;
+
+        }
+        #main-menu ul li:hover ul{
+            display: block;
+        }
+        #main-menu ul ul li{
+         display: block;
+        }
+        #main-menu ul li:hover a {
+            background-color: #ff5e57;
+
+        }
+        #main-menu ul li:hover li a{
+            background-color: #575fcf;
+        }
+        #main-menu ul ul li a:hover{
+            background-color: #ff5e57;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="main-menu">
+        <ul>
+            <li><a href=""> Home</a></li>
+            <li><a href=""> About</a></li>
+            <li><a href=""> Portfolio</a></li>
+            <li><a href=""> Service</a>
+                <ul>
+                    <li><a href=""> Home</a></li>
+                    <li><a href=""> About</a></li>
+                    <li><a href=""> Portfolio</a></li>
+                    <li><a href=""> Service</a></li>
+                    <li><a href=""> Testimonial</a></li>
+                    <li><a href=""> Contacts Us</a></li>
+                    <li><a href=""> Blogs</a></li>
+                </ul>
+            </li>
+            <li><a href=""> Testimonial</a></li>
+            <li><a href=""> Contacts Us</a></li>
+            <li><a href=""> Blogs</a></li>
+        </ul>
+
+    </nav>
+</body>
+</html>
