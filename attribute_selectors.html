@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+    <style>
+        a[target]{
+            text-decoration: none;
+            color: darkred;
+        }
+        a[target="_self"]{
+            color: plum;
+        }
+        a[title~='Pro']{
+            color: aqua;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        a[title~='BD']{
+            color: rgb(255, 51, 0);
+            font-size: 25px;
+            font-weight: normal;
+        }
+        div[class|='child']{
+            width: 300px;
+            height: 200px;
+            background-color: teal;
+        }
+        div[class^='child']{
+            width: 300px;
+            height: 200px;
+            background-color: teal;
+            margin-bottom: 5px;
+        }
+        div [class$='ial']{
+            background-color: violet;
+        }
+        div[class*='erv']{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <a href="" target="_blank" >Procoder</a>
+    <a href="">Procoder</a>
+    <a href="" target="_blank">Procoder</a>
+    <a href="" target="_self">Procoder</a>
+    <a href="" title="Pro Coder BD">Procoder</a>
+    <a href="" title="Pro Coder">Procoder</a>
+    <a href="" title="Pro Coder">Procoder</a>
+    <a href="">Procoder</a>
+
+
+    <div id="service">
+        <div class="child_service">
+
+        </div>
+        <div class="child-service">
+            working
+        </div>
+    </div>
+
+    <div id="testimonial">
+        <div class="child-testimonial">
+            working
+        </div>
+        <div class="child_testimonial">
+
+        </div>
+    </div>
+</body>
+</html>
