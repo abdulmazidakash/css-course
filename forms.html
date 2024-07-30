@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <style>
+        .contact{
+            width: 80%;
+            border: 1px solid crimson;
+            margin: 20px auto; 
+            padding: 5%;       
+            text-align: center;
+        }
+        .contact h2{
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        .contact p{
+            color: black;
+        }
+        .contact form{
+            margin-top: 20px;
+        }
+        .child-form{
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+
+        }
+        .child-form label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .child-form input,
+        .child-form textarea,
+        .child-form select
+        {
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 10px 3%;
+            width: 94%;
+        }
+        .child-form select{
+            width: 100%;
+        }
+        .child-form input[type="button"]{
+            width: 200px;
+            background-color: blueviolet;
+            border: 1px solid blueviolet;
+            color: white;
+        }
+        .child-form input[type="button"]:hover{
+            width: 200px;
+            background-color: black;
+            border: 1px solid blueviolet;
+            color: white;
+            cursor: pointer;
+        }
+
+        .child-form:last-child{
+            margin-bottom: 0px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <h2>Level up your brand</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate itaque vel temporibus labore ducimus veniam quasi tenetur vitae inventore?</p>
+        <form action="">
+            <div class="child-form">
+                <label for="name">Enter Your Name</label>
+            <input type="text" name="name" id="" placeholder="Enter your name">
+            </div>
+            <div class="child-form">
+                <label for="email">Enter your email</label>
+                <input type="email" name="email" id="" placeholder="your email address">
+            </div>
+            <div class="child-form">
+                <label for="Phone">Country</label>
+                <select name="Country" id="">
+                    <option value="BD">Bangladesh</option>
+                    <option value="in">India</option>
+                    <option value="pk">Pakistan</option>
+                    <option value="sl">Sri Lanka</option>
+                </select>
+            </div>
+            <div class="child-form">
+                <label for="Phone">Enter your phone</label>
+                <input type="number" name="phone" id="" placeholder="Enter your phone number">
+            </div>
+            <div class="child-form">
+                <label for="message">How can we help?</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            </div>
+            <div class="child-form">
+                <input type="button" value="Send Message">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
