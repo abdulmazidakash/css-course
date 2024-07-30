@@ -2,4 +2,23 @@ div{
     width: 200px;
     height: 400px;
     background-color: aqua;
+    margin-bottom: 20px;
+}
+.parent{
+    padding: 10px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    background-color: crimson;
+}
+.parent p{
+    color: #000;
+}
+a:hover{
+    color: red;
 }
