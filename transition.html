@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .one{
+            background-color: teal;
+            border: 5px solid rebeccapurple;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 15px;
+            transition: width 0.5s, height 3s, border 5s;
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+
+        }
+        .one:hover{
+            border: 15px solid rgb(205, 90, 195);
+            width: 400px;
+            height: 350px;
+        }
+        a{
+            color: red;
+            font-weight: bold;
+            font-size: 35px;
+            transition: 1s;
+        }
+        a:hover{
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="one"></div>
+    <a href="">Subscribe</a>
+</body>
+</html>
