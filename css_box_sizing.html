@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Sizing</title>
+    <style>
+        *,
+        *::after,
+        *::before{
+            box-sizing: border-box;
+        }
+        .test{
+            width: 350px;
+            height: 400px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .one{
+            background-color: teal;
+            padding: 50px;
+            border: 10px solid black;
+            box-sizing: content-box;
+        }
+        .two{
+            background-color: crimson;
+            padding: 50px;
+            border: 10px solid yellow;
+            box-sizing: border-box;
+        }
+        .learning{
+            box-sizing: border-box;
+        }
+        .child{
+            background-color: green;
+            padding: 10px 8px;
+            border: 5px solid turquoise;
+            box-sizing: border-box;
+            width: 32%;
+            float: left;
+            margin-right: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        <div class="one">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae eligendi voluptates quaerat quis rerum, placeat, corrupti sapiente ullam id laudantium, cumque porro temporibus atque suscipit itaque cupiditate enim consequuntur odio.</p>
+        </div>
+        <div class="two">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis dicta tempore enim, sit, harum accusantium fuga quas repudiandae non sapiente saepe magni aliquam recusandae sunt cupiditate eveniet nulla! Repudiandae.</p>
+        </div>
+    </div>
+
+    <div class="learning">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam assumenda eius asperiores, error nisi hic sapiente quo expedita voluptate exercitationem, dolorem quos soluta ratione id blanditiis deleniti placeat at!</p>
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam assumenda eius asperiores, error nisi hic sapiente quo expedita voluptate exercitationem, dolorem quos soluta ratione id blanditiis deleniti placeat at!</p>
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam assumenda eius asperiores, error nisi hic sapiente quo expedita voluptate exercitationem, dolorem quos soluta ratione id blanditiis deleniti placeat at!</p>
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam assumenda eius asperiores, error nisi hic sapiente quo expedita voluptate exercitationem, dolorem quos soluta ratione id blanditiis deleniti placeat at!</p>
+        </div>
+    </div>
+</body>
+</html>
