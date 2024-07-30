@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        #test p.para{
+            color: aqua;
+            font-weight: 700;
+        }
+        #test{
+            color: blueviolet;
+        }
+        .child p.para{
+            color: crimson !important;
+        }
+        .child .para{
+            color: teal;
+        }
+        .para{
+            color: yellow;
+        }
+        p.para{
+            color: red;
+            color: blue;
+        }
+        p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <div class="child">
+            <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem quo molestias numquam, aliquam enim rerum accusamus unde consequuntur cum itaque earum laborum odio error vitae odit, fugiat officia amet?</p>
+        </div>
+    </div>
+</body>
+</html>
