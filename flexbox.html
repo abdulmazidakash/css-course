@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --primary: #222f3e ;
+            --sec: #6F1E51;
+            --darkColor: #10ac84;
+            --whiteColor: #fff;
+            --defaultWidth: 90%;
+        }
+        *,
+        *::after,
+        *::before{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: var(--sec);
+            font-weight: 700;
+        }
+        .main{
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+
+            /* so much problem  */
+        }
+        .main-area{
+            width: var(--defaultWidth);
+            margin: 0 auto;
+            border-radius: 5px;
+
+         
+
+
+
+        }
+        .main-area h2{
+            text-align: center;
+            background-color: var(--primary);
+            padding: 20px;
+            color: var(--darkColor);
+        }
+        .child{
+            background-color: var(--darkColor);
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: var(--whiteColor);
+
+            margin: 1%;
+            flex-basis: 30%;
+
+        }
+        .child button{
+            background-color: var(--primary);
+            color: var(--darkColor);
+            display: inline-block;
+            transition: 0.5s;
+            padding: 10px 20px ;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+        .child button:hover{
+            background-color: var(--sec);
+            color: var(--primary);
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="main-area">
+            <div><h2>Hello!</h2></div>
+            <div class="child">
+                <h3>This is Variables 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat earum ullam. Est, aspernatur dicta assumenda quo iste illo quia nulla expedita alias ratione maxime explicabo mollitia, aliquid excepturi culpa.</p>
+                <button class="btn-primary">Read More</button>
+            </div>
+            <div class="child">
+                <h3>This is Variables 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat earum ullam. Est, aspernatur dicta assumenda quo iste illo quia nulla expedita alias ratione maxime explicabo mollitia, aliquid excepturi culpa.</p>
+                <button class="btn-primary">Read More</button>
+            </div>
+            <div class="child">
+                <h3>This is Variables 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat earum ullam. Est, aspernatur dicta assumenda quo iste illo quia nulla expedita alias ratione maxime explicabo mollitia, aliquid excepturi culpa.</p>
+                <button class="btn-primary">Read More</button>
+            </div>
+            <div class="child">
+                <h3>This is Variables 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellat earum ullam. Est, aspernatur dicta assumenda quo iste illo quia nulla expedita alias ratione maxime explicabo mollitia, aliquid excepturi culpa.</p>
+                <button class="btn-primary">Read More</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
